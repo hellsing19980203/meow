@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papu's Love Rating 🥰</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #ff5a60;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff5a60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Love Rating App 🌹</h1>
+    <p>Hello, my dear Papu! How much do you love your boyfriend? Enter a number from 1 to 5. 🥰</p>
+    <input type="number" id="ratingInput" min="1" max="5">
+    <button onclick="getLoveRating()">Submit 💘</button>
+
+    <script>
+        function getLoveRating() {
+            const ratingInput = document.getElementById('ratingInput');
+            const rating = parseInt(ratingInput.value);
+
+            if (rating < 1) {
+                alert("😡😡😡😡😡 Give me more than that! Hmph! Try again with a rating between 1 and 5. 🙄💔");
+            } else if (rating > 5) {
+                alert("Aww..? 🥺😘 You love me beyond the highest love point? But try again sweetheart 😉 this time between 1 and 5. 💖");
+            } else if (rating === 1) {
+                alert("Oh no, just 1? That's alright, Papu still loves you! 😊💖");
+            } else if (rating === 2) {
+                alert("Aww, Papu loves you a little, but her love is growing! 🥰💕");
+            } else if (rating === 3) {
+                alert("You love him more than a little! It's getting serious now! 😄💗");
+            } else if (rating === 4) {
+                alert("Aww, why did you give him a 4? 🥺🥺 Meow, give him 1 more! 😣💓");
+            } else if (rating === 5) {
+                alert("Wow, Papu loves you so much! I knew it! 😏 But don't butter him up, give him a real rating! 🥰💘");
+            }
+        }
+    </script>
+</body>
+</html>
